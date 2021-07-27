@@ -1,3 +1,125 @@
-Hello I'm akshar
-Hello this is Nikhil.
-This is third line.
+Nikhil@DESKTOP-UU4IBJ2 MINGW64 /d/github trial
+$ git clone git@github.com:nikhilshrotri/trial.git
+Cloning into 'trial'...
+Enter passphrase for key '/c/Users/Nikhil/.ssh/id_rsa':
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+Nikhil@DESKTOP-UU4IBJ2 MINGW64 /d/github trial
+$ cd trial
+
+Nikhil@DESKTOP-UU4IBJ2 MINGW64 /d/github trial/trial (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Nikhil@DESKTOP-UU4IBJ2 MINGW64 /d/github trial/trial (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   trial.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Nikhil@DESKTOP-UU4IBJ2 MINGW64 /d/github trial/trial (main)
+$ git add .
+
+Nikhil@DESKTOP-UU4IBJ2 MINGW64 /d/github trial/trial (main)
+$ git commit -m "Added one line"
+[main 76204ac] Added one line
+ 1 file changed, 1 insertion(+)
+
+Nikhil@DESKTOP-UU4IBJ2 MINGW64 /d/github trial/trial (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Nikhil@DESKTOP-UU4IBJ2 MINGW64 /d/github trial/trial (main)
+$ git push origin main
+Enter passphrase for key '/c/Users/Nikhil/.ssh/id_rsa':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 279 bytes | 139.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:nikhilshrotri/trial.git
+   133f570..76204ac  main -> main
+
+Nikhil@DESKTOP-UU4IBJ2 MINGW64 /d/github trial/trial (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Nikhil@DESKTOP-UU4IBJ2 MINGW64 /d/github trial/trial (main)
+$ cd ..
+
+Nikhil@DESKTOP-UU4IBJ2 MINGW64 /d/github trial
+$ git clone git@github.com:nikhilshrotri/trial.git
+fatal: destination path 'trial' already exists and is not an empty directory.
+
+Nikhil@DESKTOP-UU4IBJ2 MINGW64 /d/github trial
+$ cd trial/
+
+Nikhil@DESKTOP-UU4IBJ2 MINGW64 /d/github trial/trial (main)
+$ git clone git@github.com:nikhilshrotri/trial.git
+Cloning into 'trial'...
+Enter passphrase for key '/c/Users/Nikhil/.ssh/id_rsa':
+remote: Enumerating objects: 11, done.
+remote: Counting objects: 100% (11/11), done.
+remote: Compressing objects: 100% (6/6), done.
+Receiving objects: 100% (11/11), done.
+remote: Total 11 (delta 0), reused 3 (delta 0), pack-reused 0
+
+Nikhil@DESKTOP-UU4IBJ2 MINGW64 /d/github trial/trial (main)
+$ git pull upstream main
+fatal: 'upstream' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Nikhil@DESKTOP-UU4IBJ2 MINGW64 /d/github trial/trial (main)
+$ git pull upstream main
+fatal: 'upstream' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Nikhil@DESKTOP-UU4IBJ2 MINGW64 /d/github trial/trial (main)
+$ git pull origin main
+Enter passphrase for key '/c/Users/Nikhil/.ssh/id_rsa':
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (5/5), 1.85 KiB | 6.00 KiB/s, done.
+From github.com:nikhilshrotri/trial
+ * branch            main       -> FETCH_HEAD
+   76204ac..6e0a4aa  main       -> origin/main
+Updating 76204ac..6e0a4aa
+Fast-forward
+ trial.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Nikhil@DESKTOP-UU4IBJ2 MINGW64 /d/github trial/trial (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Nikhil@DESKTOP-UU4IBJ2 MINGW64 /d/github trial/trial (main)
+$
